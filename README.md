@@ -7,19 +7,19 @@ Setelah menjelaskan problem statement dan melakukan EDA pada _part_ sebelumnya. 
 ## Modeling
 ### Training Data
 
-<!-- ![Load Data](https://github.com/isa96/MLP-train/blob/main/assets/8.PNG "Load Data") -->
+![Load Data](https://github.com/isa96/MLP-train/blob/main/assets/8.PNG "Load Data")
 
 Gambar 1. Load Data.
 
 Pertama disiapkan fungsi untuk load data train/test.
 
-<!-- ![Parameter Model](https://github.com/isa96/MLP-train/blob/main/assets/9.PNG "Parameter Model") -->
+![Parameter Model](https://github.com/isa96/MLP-train/blob/main/assets/9.PNG "Parameter Model")
 
 Gambar 2. Konfigurasi Parameter Model.
 
 Kedua disiapkan model apa saja yang dipilih untuk nantinya akan dilakukan proses _training_ dan beserta konfigurasi parameter model yang dipilih yang disimpan dalam bentuk file dengan ekstensi _yaml_.
 
-<!-- ![Konversi Parameter](https://github.com/isa96/MLP-train/blob/main/assets/10.PNG "Konversi Parameter") -->
+![Konversi Parameter](https://github.com/isa96/MLP-train/blob/main/assets/10.PNG "Konversi Parameter")
 
 Gambar 3. Konfersi Parameter Model.
 
@@ -29,7 +29,7 @@ Setelah semua fungsi file yang dibutuhkan telah selesai maka dibuat sebuah file 
 
 Selanjutnya isi file _train.py_ dengan pertama masukan _library_ yang dibutuhkan. Lalu, _load_ dua data yang didapatkan dari _neptune.ai_. Selanjutnya, buat variabel yang menginisialisasi pengiriman metadata ke _neptune.ai_. Berikutnya, _load_ data latih dan tes yang sudah di simpan sebelumnya. Siapkan variabel yang bertujuan untuk menyimpan konfigurasi parameter model yang sudah disiapkan dengan ekstensi _yaml_. Setelah itu, lakukan pemetaan terhadap model yang sudah dipilih dengan konfigurasi file _yaml_ yang ada sehingga masukan parameter model yang dipilih sesuai. Terakhir, dilakukan proses perulangan untuk melakukan proses _training_ model dan menyimpan metadata yang diperlukan ke _neptune.ai_. Jika proses _training_ dan penyimpanan sudah selesai maka hentikan proses pengiriman ke _neptune.ai_.
 
-<!-- ![Metadata Neptune](https://github.com/isa96/MLP-train/blob/main/assets/11.PNG "Metadata Neptune") -->
+![Metadata Neptune](https://github.com/isa96/MLP-train/blob/main/assets/11.PNG "Metadata Neptune")
 
 Gambar 4. Hasil Penyimpanan Metadata di _Neptune.ai_.
 
@@ -37,11 +37,11 @@ Di Gambar 4 terlihat bahwa ada 4 folder yaitu models, monitoring, source-code, d
 
 ### Evalusasi Model
 
-<!-- ![Evaluasi LR](https://github.com/isa96/MLP-train/blob/main/assets/12.PNG "Evaluasi LR") -->
+![Evaluasi LR](https://github.com/isa96/MLP-train/blob/main/assets/12.PNG "Evaluasi LR")
 
 Gambar 5. Hasil Evaluasi Data Dengan Model Logistic Regression.
 
-<!-- ![Evaluasi SVM](https://github.com/isa96/MLP-train/blob/main/assets/13.PNG "Evaluasi SVM") -->
+![Evaluasi SVM](https://github.com/isa96/MLP-train/blob/main/assets/13.PNG "Evaluasi SVM")
 
 Gambar 6. Hasil Evaluasi Data Dengan Model Support Vector Machine.
 
